@@ -14,7 +14,8 @@
         <ul class="nav nav-pills justify-content-end">
         {% if user.is_authenticated %}
             <li class="nav-item">
-                <a href="{% url 'post_new' %}"><p>New Post</p></a>
+                <a href="{% url 'post_new' %}">New Post</a>
+                <a href="{% url 'post_draft_list' %}">Edit Post</a>
             </li>
         {% endif %}
       </ul>
