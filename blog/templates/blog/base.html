@@ -23,7 +23,9 @@
                  <a href="{% url 'logout' %}">Log out</a>
             </li>
         {% else %}
-             <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
+            <li class="nav-item">
+              <a href="{% url 'login' %}">Login</a>
+            </li>
         {% endif %}
       </ul>
         <div class="content container">
